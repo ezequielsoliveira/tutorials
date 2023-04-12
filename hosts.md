@@ -8,20 +8,26 @@ O arquivo "hosts" é útil para fins de teste e depuração, quando é necessár
 
 # Exemplos de uso
 
-- Mapear um nome de host para o endereço "localhost":
-  - ```# Arquivo hosts
-127.0.0.1   localhost```
-> Esse exemplo mapeia o nome de host "localhost" para o endereço IP 127.0.0.1, que é o endereço IP da máquina local.
-
-- Mapear um nome de host para o endereço "www.meusite.com":
-  - ```# Arquivo hosts
+- Mapear um nome de host para o endereço `localhost`:
+```
+# Arquivo hosts
 127.0.0.1   localhost
-192.168.0.10   www.meusite.com```
-> Esse exemplo mapeia o nome de host "www.meusite.com" para o endereço IP 192.168.0.10. Isso pode ser útil para testar um site em um servidor local antes de fazer o upload para um servidor de produção.
+```
+> Esse exemplo mapeia o nome de host `localhost` para o endereço IP `127.0.0.1`, que é o endereço IP da máquina local.
 
-- Mapear um nome de host para sobrepor um endereço existente:
-  - ```# Arquivo hosts
+- Mapear um nome de host para o endereço `www.meusite.com`:
+```
+# Arquivo hosts
 127.0.0.1   localhost
 192.168.0.10   www.meusite.com
-192.168.0.50   www.facebook.com```
-> Esse exemplo mapeia o nome de host "www.facebook.com" para o endereço IP 192.168.0.50, que é um endereço endereço IP da rede local. Isso também impede que o navegador acesse o site do Facebook.
+```
+> Esse exemplo mapeia o nome de host `www.meusite.com` para o endereço IP `192.168.0.10`. Isso pode ser útil para testar um site em um servidor local antes de fazer o upload para um servidor de produção.
+
+- Mapear um nome de host para sobrepor um endereço existente:
+```
+# Arquivo hosts
+127.0.0.1   localhost
+192.168.0.10   www.meusite.com
+192.168.0.50   www.facebook.com
+```
+> Esse exemplo mapeia o nome de host `www.facebook.com` para o endereço IP `192.168.0.50`, que é um endereço endereço IP da rede local. Isso também impede que o navegador acesse o site do Facebook.
